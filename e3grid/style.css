@@ -16,17 +16,19 @@ body{
 /* slider */
 .slider-wrapper{
     background: purple;
+    max-height: 572px;
     /* margin: 0px; */
 
     /* remove */
     /* border: 1px solrgb(21, 21, 24)lue; */
 }
 .top-navbar{
-    height: 60px;
-     border: 1px solid red;
+    height: 85px;
+    border: 1px solid red;
 }
 .slider-lead-content{
     border: 1px solid rgb(255, 0, 191);
+    height: 100%;
 }
 .slider-heading {
     padding: 50px 0 5px 0;
@@ -41,14 +43,18 @@ body{
     font-weight: 600;
     line-height: 20px;
 }
-.slider-lead-images{
-    border: 1px solid rgb(38, 0, 255);
+.slider-lead-image{
+    padding: 0px!important;
+    z-index: 1;
+    /* height: 1%; */
 }
+
 
 /* partners */
 .partners-section {
     color: black;
     border: 1px solid red;
+    height: 83px;
 }
 .partners-image {
     border: 1px solid green;
@@ -95,18 +101,24 @@ body{
         line-height: 20px;
     }
 
+    /* .slider-lead-image{
+        height: 50%;
+    } */
+
 
 
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
- 
+@media (max-width: 768px) {  
+    
 }
  
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
- 
+@media (max-width: 992px) { 
+    /* .slider-lead-image{
+        max-height: 1000px;
+    } */
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
