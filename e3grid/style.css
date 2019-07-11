@@ -1,0 +1,41 @@
+
+body{}
+
+.my-container{
+     border: 1px solid green;
+}
+/* slider */
+.slider-wrapper{
+    border: 1px solid blue;
+}
+.top-navbar{
+     border: 1px solid red;
+}
+.slider-lead-content{
+    border: 1px solid rgb(255, 0, 191);
+}
+.slider-lead-images{
+    border: 1px solid rgb(38, 0, 255);
+}
+
+/* partners */
+.partners-section {
+    border: 1px solid red;
+}
+.partners-image {
+    border: 1px solid green;
+}
+
+/* contact-form-section */
+.contact-form-section {
+    border: 1px solid rgb(38, 0, 255);
+}
+.contact-form {
+    border: 1px solid green;
+}
+.contact-form-map {
+    border: 1px solid rgb(255, 0, 191);
+}
+.contact-form-pattern {
+    border: 1px solid red;
+}
