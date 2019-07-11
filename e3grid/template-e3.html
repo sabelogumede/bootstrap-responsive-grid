@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="it=edge">
         <title>Grid template 1</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Google font-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,900&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet"/>
     </head>
     <body>
@@ -14,77 +16,75 @@
             <!-- slider-wrapper -->
             <div class="row slider-wrapper">
                 <!-- top-navbar -->
-                <div class="col-12 top-navbar">Logo</div>
+                <div class="col-12 col-lg-10 offset-lg-2 top-navbar">Logo</div>
                 <!-- slider-lead -->
-                <div class="col-md-8 slider-lead-text">
+                <div class="col-12 col-md-8 col-lg-6 offset-lg-2 slider-lead-content">
                     <!-- slider-heading -->
-                    <h1>
-                        Heading
+                    <h1 class="slider-heading">
+                        The goal of e3 is to insire...
                     </h1>
                     <!-- slider-sub-heading -->
-                    <p>
-                        sub-heading text</p>
+                    <p class="silder-sub-heading">
+                        100% of the learners to complete school and 100% of these learners to study further, get a job, or start their own enterprises</p>
                     <!-- slider-controles - buttons -->
                 </div>
-                <div class="col-md-4 slider-lead-images">image</div>
+                <!--Slider image -->
+                <div class="col-md-4 slider-lead-images d-none d-md-block">image</div>
             </div>
             <!-- partners-section-->
             <div class="row partners-section">
-                <div class="col-sm-2 col-3 partners-image">1</div>
+                <div class="col-sm-2 col-3 offset-lg-2 partners-image">1</div>
                 <div class="col-sm-2 col-3 partners-image">2</div>
                 <div class="col-sm-2 col-3 partners-image">3</div>
             </div>
             <!-- contact-form-section -->
             <div class="row contact-form-section">
-                <div class="col-12 col-md-8 contact-form">form</div>
-                <div class="col-12 col-md-4 contact-form-map">map</div>
-                <div class="col-12 col-md-4 contact-form-pattern">pattern</div>
+                <!--Left - side of a form* -->
+                <div class="col-12 col-md-8 contact-form">
+                    <div class="row">
+                        <div class="col-12 col-md-9 col-lg-6 offset-lg-3  form">
+                            <h1>contact us</h1>
+                            <p>If you would like to get in touch with us for any reason whether it be to provide resources, support or suggestions, please fill in your contcat information below.</p>
+                            <!--Form input-->
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputfullName">Full name*</label>
+                                    <input type="text" class="form-control" id="exampleInputfullName" aria-describedby="fullNamelHelp" placeholder="Full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address*</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputinquarySubject">Inquary subject*</label>
+                                    <input type="text" class="form-control" id="exampleInputinquarySubject" aria-describedby="inquarySubjectHelp" placeholder="Inquary subject">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputMessage">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Right - side of a form* -->
+                <div class="col-12 col-md-4 contact-form-media">
+                    <div class="row">
+                        <!-- Map -->
+                        <div class="col-12 media-map">
+                            map
+                        </div>
+                        <!-- Pattern -->
+                        <div class="col-12 media-pattern">
+                            pattern
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--------------End of Grid---------------->
-            <!-- row -->
-            <div class="row my-row">
-                <!-- col -->
-                <div class="col-md-4 col-sm-6 my-col">
-                    Row 1 col 1
-                </div>
-                <!-- col -->
-                <div class="col-md-8 col-sm-6 my-col">
-                    Row 1 col 2
-                </div>
-            </div>
-            <!-- row -->
-            <!-- position rows inside a row with flex-box-classes Horizontaly-->
-            <!-- justify-content-start, justify-content-center, justify-content-end, justify-content-around, justify-content-between -->
-            <!-- position rows inside a row with flex-box-classes Verticaly-->
-            <!-- align-items-start, align-items-center, align-items-end, align-items-stretch -->
-            <div class="row justify-content-between align-items-stretch my-row">
-                <!-- col -->
-                <!-- Switch collumn order flex class-->
-                <!-- order-12, order-md-12-->
-                <!--order number arrange small number 1 to left and 12 being far right -->
-                <div class="col-4 order-md-12 my-col">
-                    Row 2 col 1
-                </div>
-                <!-- col -->
-                <!--Target individual collumns position Vertically-->
-                <!--align-self-start,center,end -->
-                <div class="col-4 align-self-end order-md-2 my-col">
-                    Row 2 col 2
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row my-row">
-                <!-- col -->
-                <!--offsetting collumns-->
-                <!-- offset-md-2 = push collumn 2 spaces to the right on md screen-->
-                <div class="col-4 offset-md-2 my-col">
-                    Row 3 col 1
-                </div>
-                <!-- col -->
-                <div class="col-4 my-col">
-                    Row 3 col 2
-                </div>
-            </div>
         </div>
     </body>
 </html>

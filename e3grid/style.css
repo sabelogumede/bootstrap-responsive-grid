@@ -1,18 +1,45 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    /* width: 100%; */
+}
+/* media queries */
 
-body{}
-
+/* --------------- */
 .my-container{
+    max-width: 1450px!important;
+    /* padding: 0px!important; */
+   
+    /* remove */
      border: 1px solid green;
 }
 /* slider */
 .slider-wrapper{
-    border: 1px solid blue;
+    background: purple;
+    /* margin: 0px; */
+
+    /* remove */
+    /* border: 1px solrgb(21, 21, 24)lue; */
 }
 .top-navbar{
+    height: 60px;
      border: 1px solid red;
 }
 .slider-lead-content{
     border: 1px solid rgb(255, 0, 191);
+}
+.slider-heading {
+    padding: 50px 0 5px 0;
+    color: #1585BB;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.silder-sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
 }
 .slider-lead-images{
     border: 1px solid rgb(38, 0, 255);
@@ -20,22 +47,69 @@ body{}
 
 /* partners */
 .partners-section {
+    color: black;
     border: 1px solid red;
 }
 .partners-image {
     border: 1px solid green;
 }
-
 /* contact-form-section */
 .contact-form-section {
+
+    /* remove */
     border: 1px solid rgb(38, 0, 255);
 }
+/* Left - side of a form*/
 .contact-form {
+    background: rgb(38, 0, 255);
+    /* remove */
     border: 1px solid green;
 }
-.contact-form-map {
+.form {
+    border: 1px solid #fff;
+}
+/* Right - side of a form */
+.contact-form-media {
+     color: black;
+}
+
+.media-map {
     border: 1px solid rgb(255, 0, 191);
 }
-.contact-form-pattern {
+.media-pattern {
     border: 1px solid red;
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {  
+ 
+    .slider-heading {
+        padding: 50px 0 5px 0;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 30px;
+    }
+    .silder-sub-heading {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
 }
